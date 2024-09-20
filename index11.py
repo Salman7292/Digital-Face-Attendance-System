@@ -14,6 +14,10 @@ import mediapipe as mp  # Import MediaPipe for face landmarks
 import pandas as pd
 from datetime import datetime
 
+from joblib import load
+
+
+
 
 
 
@@ -555,10 +559,18 @@ elif selections == "Scan Your Face":
 
     # st.write(f"Image paths: {img_path}")
 
+    # # Load face encodings and metadata
+    # with open("Encoding_file5.pkl", "rb") as file:
+    #     encoding_known_list = pickle.load(file)
+    #     encoding_known_list1, name_list, enrollment_id = encoding_known_list
+
+
+   
+
     # Load face encodings and metadata
-    with open("Encoding_file5.pkl", "rb") as file:
-        encoding_known_list = pickle.load(file)
-        encoding_known_list1, name_list, enrollment_id = encoding_known_list
+    encoding_known_list = load("Encoding_file5.pkl")
+    encoding_known_list1, name_list, enrollment_id = encoding_known_list
+
 
     # st.write(f"Enrollment IDs: {enrollment_id}")
 
