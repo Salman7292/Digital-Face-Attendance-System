@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 import cv2
 import numpy as np
 from PIL import Image
-import pickle
+
 import face_recognition
 import cvzone
 import os
