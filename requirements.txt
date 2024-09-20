@@ -4,7 +4,6 @@ streamlit-option-menu
 opencv-python
 numpy
 Pillow
-
 face_recognition
 cvzone
 mediapipe
