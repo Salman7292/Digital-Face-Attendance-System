@@ -4,7 +4,7 @@ streamlit-option-menu
 opencv-python
 numpy
 Pillow
-face_recognition
+face_recognition==1.3.0  # Specify a version if needed
 cvzone
 mediapipe
 pandas
