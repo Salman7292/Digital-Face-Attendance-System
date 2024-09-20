@@ -1,0 +1,11 @@
+requests
+streamlit
+streamlit-option-menu
+opencv-python
+numpy
+Pillow
+pickle5  # Since 'pickle' is part of the standard library, you usually don't need to include it, but if you're using a specific version or implementation, you can specify it.
+face_recognition
+cvzone
+mediapipe
+pandas
